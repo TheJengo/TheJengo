@@ -4,8 +4,36 @@
 
 <p align="center">
   <h3 align="center">👋 Welcome To the TheJengo.Program.cs</h3>
-  <img src="https://user-images.githubusercontent.com/26827337/112555464-49c50380-8dd9-11eb-86da-341dde061784.png" />  
-<p>
+</p>
+
+```csharp
+using TheJengo.Enums;
+using TheJengo.Models;
+
+namespace TheJengo
+{
+  public static Program
+  {
+    public static Task Main()
+    {
+      Dictionary<Area, string[]> technologies = new()
+      {
+        {Area.Languages, new string []{ "C#", "Javascript", "Java", "C", "PHP" }},
+        {Area.Backends, new string []{ ".NET", "Laravel" }},
+        {Area.Frontends, new string []{ "Vue", "React", "Angular" }},
+        {Area.Databases, new string []{ "MSSQL", "Azure SQL", "MySQL", "Mongo" }},
+        {Area.Devops, new string []{ "Azure", "Docker" }},
+        {Area.Interests, new string [] { "Azure", "Cloud", "Microservices", "CQRS", "Event Driven Development", "BDD" }}
+      };
+
+      Developer dev = new ("Cengiz Cebeci", "HexTransforma Healthcare", "Junior Backend Developer", technologies);
+
+      Console.WriteLine(dev.ToString());
+    }
+  }
+}
+```
+
 <h3 align="center">Stats</h3>
 <p align="center" width="100%">  
   <a href="https://github.com/thejengo">
