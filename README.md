@@ -18,15 +18,21 @@ namespace TheJengo
     {
       Dictionary<Area, string[]> technologies = new()
       {
-        {Area.Languages, new string []{ "C#", "Javascript", "Java", "C", "PHP" }},
+        {Area.Languages, new string []{ "C#", "Javascript", "TypeScript" "Java", "C", "PHP" }},
         {Area.Backends, new string []{ ".NET", "Laravel" }},
-        {Area.Frontends, new string []{ "Vue", "React", "Angular" }},
-        {Area.Databases, new string []{ "MSSQL", "Azure SQL", "MySQL", "Mongo" }},
-        {Area.Devops, new string []{ "Azure", "Docker" }},
-        {Area.Interests, new string [] { "Azure", "Cloud", "Microservices", "CQRS", "Event Driven Development", "BDD" }}
+        {Area.Frontends, new string []{ "Angular", "Vue", "React" }},
+        {Area.Databases, new string []{ "MSSQL", "Azure SQL", "MySQL", "NoSQL" }},
+        {Area.Devops, new string []{ "AzureDevOps", "Docker", "Git" }},
+        {Area.Interests, new string [] { "Azure", "Cloud", "Go" "Microservices", "CQRS", "Event Driven Development", "TDD", "BDD" }}
       };
 
-      Developer dev = new ("Cengiz Cebeci", "HexTransforma Healthcare", "Junior Backend Developer", technologies);
+      Developer dev = new 
+      {
+        Name = "Cengiz Cebeci",
+        Previous = new Role("HexTransforma Healthcare", "Junior Backend Developer")
+        Current = new Role("wtw", "Software Engineer"), 
+        Technologies = technologies
+      };
 
       Console.WriteLine(dev.ToString());
     }
