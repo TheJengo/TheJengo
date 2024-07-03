@@ -30,7 +30,7 @@ namespace TheJengo
       {
         Name = "Cengiz Cebeci",
         Previous = new List<Role>(){
-            new Role("HexTransforma Healthcare", "Junior Backend Developer").
+            new Role("HexTransforma Healthcare", "Junior Backend Developer"),
             new Role("wtw", "Software Engineer")
         },
         Current = new Role("CAI", "Software Engineer"), 
