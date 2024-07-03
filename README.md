@@ -29,8 +29,11 @@ namespace TheJengo
       Developer dev = new 
       {
         Name = "Cengiz Cebeci",
-        Previous = new Role("HexTransforma Healthcare", "Junior Backend Developer")
-        Current = new Role("wtw", "Software Engineer"), 
+        Previous = new List<Role>(){
+            new Role("HexTransforma Healthcare", "Junior Backend Developer").
+            new Role("wtw", "Software Engineer")
+        },
+        Current = new Role("CAI", "Software Engineer"), 
         Technologies = technologies
       };
 
