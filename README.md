@@ -12,21 +12,21 @@ using TheJengo.Models;
 
 namespace TheJengo
 {
-  public static Program
+  public static class Program
   {
     public static Task Main()
     {
       Dictionary<Area, string[]> technologies = new()
       {
-        {Area.Languages, new string []{ "C#", "Javascript", "TypeScript" "Java", "C", "PHP" }},
+        {Area.Languages, new string []{ "C#", "Javascript", "TypeScript", "Java", "C", "PHP" }},
         {Area.Backends, new string []{ ".NET", "Laravel" }},
         {Area.Frontends, new string []{ "Angular", "Vue", "React" }},
         {Area.Databases, new string []{ "MSSQL", "Azure SQL", "MySQL", "NoSQL" }},
         {Area.Devops, new string []{ "AzureDevOps", "Docker", "Git" }},
-        {Area.Interests, new string [] { "Azure", "Cloud", "Go" "Microservices", "CQRS", "Event Driven Development", "TDD", "BDD" }}
+        {Area.Interests, new string [] { "Azure", "Cloud", "Go", "Microservices", "CQRS", "Event Driven Development", "TDD", "BDD" }}
       };
 
-      Developer dev = new 
+      Developer dev = new() 
       {
         Name = "Cengiz Cebeci",
         Previous = new List<Role>(){
